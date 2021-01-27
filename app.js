@@ -9,7 +9,10 @@ const OUTPUT_DIR = path.resolve(__dirname, 'output');
 const outputPath = path.join(OUTPUT_DIR, 'team.html');
 
 const render = require('./lib/htmlRenderer');
+
+
 const employeeInfo = [];
+
 function chooseEmployeeType() {
   inquirer
     .prompt([
