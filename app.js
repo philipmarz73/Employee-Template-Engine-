@@ -67,6 +67,7 @@ function addManager (){
  
   ]).then (answers => {
     const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
+    console.log (manager);
     employeeInfo.push(manager);
     chooseEmployeeType()
   })
