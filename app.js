@@ -41,7 +41,51 @@ function chooseEmployeeType() {
       }
     });            
 }
-// inquirer
+
+function addManager (){
+  inquirer.prompt([
+    {
+      type: 'input',
+      name: 'managerName',
+      message: "What is your Manager's name?",
+    },
+    {
+      type: 'input',
+      name: 'managerId',
+      message: "What is your Manager's ID?",
+    },
+    {
+      type: 'input',
+      name: 'managerEmail',
+      message: "What is your Manager's email?",
+    },
+    {
+      type: 'input',
+      name: 'managerOfficeNumber',
+      message: "What is your Manager's office number?",
+    },
+ 
+  ]).then (answers => {
+    const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
+    employeeInfo.push(manager);
+    chooseEmployeeType()
+  })
+}
+
+
+
+
+
+
+function buildTeam(){
+  if (!fs.existsSync(OUTPUT_DIR)){
+    fs.mkdirSync(OUTPUT_DIR)
+  }
+  fs.writeFileSync(outputPath, render(employeeInfo), "UTF-8")
+}
+
+chooseEmployeeType()
+// functioninquirer
 //   .prompt([
 //     {
 //       type: 'input',
