@@ -73,6 +73,61 @@ function addManager (){
   })
 }
 
+function addEngineer (){
+  inquirer.prompt([
+    {
+      type: 'input',
+      name: 'engineerName',
+      message: "What is your Engineer's name?",
+    },
+    {
+      type: 'input',
+      name: 'engineerId',
+      message: "What is your Engineer's ID?",
+    },
+    {
+      type: 'input',
+      name: 'engineerEmail',
+      message: "What is your Engineer's email?",
+    },
+    {
+      type: 'input',
+      name: 'engineerGitHub',
+      message: "What is your Engineer's GitHub?",
+    },
+ 
+  ]).then (answers => {
+    const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGitHub);
+    console.log (engineer);
+    employeeInfo.push(engineer);
+    chooseEmployeeType()
+  })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
