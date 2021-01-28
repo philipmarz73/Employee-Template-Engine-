@@ -104,34 +104,36 @@ function addEngineer (){
   })
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function addIntern (){
+  inquirer.prompt([
+    {
+      type: 'input',
+      name: 'internName',
+      message: "What is your Intern's name?",
+    },
+    {
+      type: 'input',
+      name: 'internId',
+      message: "What is your Intern's ID?",
+    },
+    {
+      type: 'input',
+      name: 'internEmail',
+      message: "What is your Intern's email?",
+    },
+    {
+      type: 'input',
+      name: 'internSchool',
+      message: "What is your Intern's School?",
+    },
+ 
+  ]).then (answers => {
+    const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool);
+    console.log (intern);
+    employeeInfo.push(intern);
+    chooseEmployeeType()
+  })
+}
 
 function buildTeam(){
   if (!fs.existsSync(OUTPUT_DIR)){
