@@ -93,7 +93,7 @@ function addEngineer (){
     {
       type: 'input',
       name: 'engineerGitHub',
-      message: "What is your Engineer's GitHub?",
+      message: "What is your Engineer's GitHub Username?",
     },
  
   ]).then (answers => {
