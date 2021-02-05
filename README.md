@@ -7,14 +7,14 @@ The application prompts a User to input information using the CLI. Each team ost
 
 ## Project Motivation
 
-We were challenged to build a functional Node CLI that can take in information and subsequently generate an HTML webpage that coherently displays that information in a usable form and following a uniform format. The 'Inquirer' NPM package was essential to set up the framework to collect and organize this information. Jest was used to test the functionality of each JavaScript file and also for the testing of each Class of employee. These classes had a basic Employee parent class that the three specialized employee categories drew from, and extended. It was useful and instructive to view the 'construction' of these classes in this way. It was also instructive to see the data being incorporated and tested in the CLI itself, which then dynamically generated the HTML, without the need for CSS styling. This in particular motivated me to consider the potential to more dynamically render pages and elements in the browser.
+We were challenged to build a functional Node CLI that can take in information and subsequently generate an HTML webpage that coherently displays that information in a usable form and following a uniform format. The 'Inquirer' NPM package was essential to set up the framework to collect and organize this information. Jest was used to test the functionality of each JavaScript file and also for the testing of each Class of employee. These classes had a basic Employee parent class that the three specialized employee categories drew from, and extended. It was useful and instructive to view the 'construction' of these classes in this way, using 'Constructors' themselves. It was also instructive to see the data being incorporated and tested in the CLI itself, which then dynamically generated the HTML, without the need for CSS styling. This in particular motivated me to consider the potential to more dynamically render pages and elements in the browser.
 
-We were invited to add some individual styling, which I did, using a brighter color palette with distinctive colors for each employee class, and experimenting with light-colored text against a darker background to further distinguish the Interns. I would like to explore more opportunities for styling, including determining a more flexible arrangement of the basic Bootstrap Cards on the page.  
+We were invited to add some individual styling, which I did, using a brighter color palette with distinctive colors for each employee class, and experimenting with light-colored text against a darker background to further distinguish the Interns. I would like to explore more opportunities for styling, including determining a more flexible arrangement of the basic Bootstrap Cards on the page, and incorporating shading and other subtle styling touches to make the templates more visually-friendly.  
 
 
 ## Resources
 
-As mentioned the Inquirer npm package was installed, and Jest was used for testing
+Two image files were included to demonstrate functionality, showing the badge templates of "My Team" as they would appear on the browser. We were supplied with an Employee.js file in the 'lib' folder, which was the basis for constructing the .js files for the Engineer, Manager, and Intern employee classes. As mentioned the Inquirer npm package was installed, and Jest was used for testing. Both the 'Path' modules and the 'FS' modules were also required. 
 
 
 ## Acknowledgments
