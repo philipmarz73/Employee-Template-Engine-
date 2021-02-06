@@ -1,4 +1,4 @@
-# Employee-Template-Engine-
+# Employee Template Engine
 
 The task assigned for this Homework assignment was to build an Employee Template Engine, which takes in information about employees and generates an HTML webpage populated with examples of templates corresponding to different Employee types. The model is a Software Engineering Team composed of a Manager and any number of team members. The three classes of employee that are represented by their own template design are 'Manager', 'Engineer', and "Intern'. The Employees' first names appear, along with an ID number and email. Each template also bears personalized information in three different categories about the individual employee it represents. In order to accomplish this, I had to build a Node CLI capable of taking in information about employees and generating an HTML webpage that displays the 'employee type' in template form and returns the individuals' information and displays it in the template. All unit tests also had to be passed. 
 
