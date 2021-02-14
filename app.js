@@ -7,12 +7,13 @@ const fs = require('fs');
 
 const OUTPUT_DIR = path.resolve(__dirname, 'output');
 const outputPath = path.join(OUTPUT_DIR, 'team.html');
-
+// will generate a team.html file to show the team badges with employee information
 const render = require('./lib/htmlRenderer');
-
+the `render` function will
+// generate and return a block of HTML including templated divs for each employee
 
 const employeeInfo = [];
-
+// generates the prompts in CLI to input specific employee information
 function chooseEmployeeType() {
   inquirer
     .prompt([
@@ -41,7 +42,7 @@ function chooseEmployeeType() {
       }
     });            
 }
-
+// funtions to add each employee type in fs.truncate, based on input information
 function addManager (){
   inquirer.prompt([
     {
@@ -134,7 +135,7 @@ function addIntern (){
     chooseEmployeeType()
   })
 }
-
+// takes input of each team member and renders it on the page 
 function buildTeam(){
   if (!fs.existsSync(OUTPUT_DIR)){
     fs.mkdirSync(OUTPUT_DIR)
