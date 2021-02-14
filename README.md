@@ -16,6 +16,10 @@ We were invited to add some individual styling, which I did, using a brighter co
 
 Two image files were included to demonstrate functionality, showing the badge templates of "My Team" as they would appear on the browser. We were supplied with an Employee.js file in the 'lib' folder, which was the basis for constructing the .js files for the Engineer, Manager, and Intern employee classes. As mentioned the Inquirer npm package was installed, and Jest was used for testing. Both the 'Path' modules and the 'FS' modules were also required. 
 
+## Video Links 
+
+Find video links here to two videos exhibiting functionality:  https://drive.google.com/file/d/1-HC7Mtluv8ftqj1H9rgPTvLEDrzdYVPY/view
+https://drive.google.com/file/d/1favNwTc1vvoAtCrbZQKBpKdn7Y2dQVC6/view
 
 ## Acknowledgments
 
